@@ -1,8 +1,10 @@
 import React from 'react';
 import { FaReact, FaNodeJs, FaPython, FaJava, FaHtml5, FaCss3Alt } from 'react-icons/fa';
+import { SiCplusplus } from "react-icons/si";
 
 const techStacks = [
-  
+
+  { name: 'C++', icon: <SiCplusplus size={50} />, description: 'A JavaScript library for building user interfaces.' },
   { name: 'React', icon: <FaReact size={50} />, description: 'A JavaScript library for building user interfaces.' },
   { name: 'Node.js', icon: <FaNodeJs size={50} />, description: 'JavaScript runtime built on Chrome\'s V8 JavaScript engine.' },
   { name: 'Python', icon: <FaPython size={50} />, description: 'A high-level programming language for general-purpose programming.' },

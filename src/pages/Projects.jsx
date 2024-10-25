@@ -74,14 +74,26 @@ const ProjectSlider = () => {
               <img src={project.thumbnail} alt={project.title} className="w-full h-48 object-fit rounded" />
               <h3 className="text-lg font-semibold mt-2">{project.title}</h3>
               <p className="text-gray-200">{project.description}</p>
-              <div className="mt-4 flex justify-between">
-                <a href={project.githubLink} className="text-blue-500" target="_blank" rel="noopener noreferrer">
-                  GitHub <FaExternalLinkAlt />
+              
+              <div className="mt-10 flex">
+                <a 
+                  href={project.githubLink} 
+                  className="bg-blue-500 text-white py-2 rounded-md text-center w-1/2 flex justify-center items-center mr-2"
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  GitHub <FaExternalLinkAlt className="ml-2" />
                 </a>
-                <a href={project.liveLink} className="text-blue-500" target="_blank" rel="noopener noreferrer">
-                  Live Link <FaExternalLinkAlt />
+                <a 
+                  href={project.liveLink} 
+                  className="bg-green-500 text-white py-2 rounded-md text-center w-1/2 flex justify-center items-center"
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  Live Link <FaExternalLinkAlt className="ml-2" />
                 </a>
               </div>
+
             </div>
           </SwiperSlide>
         ))}
