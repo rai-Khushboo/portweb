@@ -1,16 +1,18 @@
 import React from 'react';
-import { FaReact, FaNodeJs, FaPython, FaJava, FaHtml5, FaCss3Alt } from 'react-icons/fa';
+import { FaReact, FaNodeJs, FaPython, FaJs, FaHtml5, FaCss3Alt } from 'react-icons/fa';
 import { SiCplusplus } from "react-icons/si";
-
+import { RiTailwindCssFill } from "react-icons/ri";
+import { GrMysql } from "react-icons/gr";
 const techStacks = [
 
   { name: 'C++', icon: <SiCplusplus size={50} />, description: 'A JavaScript library for building user interfaces.' },
   { name: 'React', icon: <FaReact size={50} />, description: 'A JavaScript library for building user interfaces.' },
-  { name: 'Node.js', icon: <FaNodeJs size={50} />, description: 'JavaScript runtime built on Chrome\'s V8 JavaScript engine.' },
+  { name: 'Tailwind CSS', icon: <RiTailwindCssFill size={50} />, description: 'JavaScript runtime built on Chrome\'s V8 JavaScript engine.' },
   { name: 'Python', icon: <FaPython size={50} />, description: 'A high-level programming language for general-purpose programming.' },
-  { name: 'Java', icon: <FaJava size={50} />, description: 'A high-level, class-based, object-oriented programming language.' },
+  { name: 'JavaScript', icon: <FaJs size={50} />, description: 'A high-level, class-based, object-oriented programming language.' },
   { name: 'HTML5', icon: <FaHtml5 size={50} />, description: 'The standard markup language for creating web pages.' },
   { name: 'CSS3', icon: <FaCss3Alt size={50} />, description: 'Style sheet language used for describing the presentation of a document.' },
+  { name: 'MYSQL', icon: <GrMysql size={50} />, description: 'Style sheet language used for describing the presentation of a document.' },
 ];
 
 const TechStacks = () => {
