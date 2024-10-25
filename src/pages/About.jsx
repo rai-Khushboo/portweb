@@ -4,11 +4,11 @@ import music from '../assets/img/music.png';
 const About = () => {
   return (
     <section className="bg-gray-900 text-white min-h-screen flex flex-col lg:flex-row justify-center items-center p-10">
-      <div className="max-w-4xl lg:w-1/2 lg:pr-10">
-        <h2 className="text-6xl font-bold mb-5 text-purple-400 text-center">Know Who I'M</h2>
-        <p className="text-lg mb-8">
-        Hi there!, I'm <span className="text-purple-400">Khushboo</span> from <span className="text-purple-400">Ghaziabad</span>.
-          I’m Khushboo, a web developer with a keen focus on building efficient, user-centered applications.I’m constantly refining my skills in problem-solving.You’ll often find me actively coding on platforms like LeetCode, HackerRank, and GeeksforGeeks, where I consistently challenge myself to enhance my understanding of algorithms and push the boundaries of efficient design.
+      <div className="max-w-4xl lg:w-2/3 lg:pr-10">
+        <h2 className="text-6xl font-bold mb-5 text-blue-600 text-center">Know Who I'M</h2>
+        <p className="text-lg mb-8 ">
+        Hi there!, I'm <span className="text-purple-500">Khushboo</span> from <span className="text-purple-500">Ghaziabad</span> , 
+          a Frotend Web developer with a keen focus on building efficient, user-centered applications.I’m constantly refining my skills in problem-solving.You’ll often find me actively coding on platforms like LeetCode, HackerRank, and GeeksforGeeks, where I consistently challenge myself to enhance my understanding of algorithms and push the boundaries of efficient design.
         </p>
             <p className="text-lg mb-10">
             When I'm not coding, I love to do.
@@ -25,13 +25,13 @@ const About = () => {
             </li>
             </ul>
 
-        <p className="italic text-lg text-purple-400">"Code with precision, impact with purpose!"</p>
+        <p className="italic text-lg text-blue-600">"Code with precision, impact with purpose!"</p>
       </div>
       <div className="mt-10 lg:mt-0 lg:w-1/2 flex justify-center">
         <img
           src={music} 
           alt="coding illustration"
-          className="w-60 h-60 rounded-full" 
+          className="w-70 h-70 rounded-md" 
         />
       </div>
     </section>

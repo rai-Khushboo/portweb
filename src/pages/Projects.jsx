@@ -6,47 +6,49 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { FreeMode, Pagination, Navigation } from 'swiper/modules';
 import { FaChevronLeft, FaChevronRight, FaExternalLinkAlt } from 'react-icons/fa';
+//importing images
+import beach from '../assets/img/beach.jpg';
 
 const projects = [
   {
-    title: "Project 1",
-    description: "Description of project 1.",
-    thumbnail: "https://via.placeholder.com/300",
-    githubLink: "https://github.com/rai-Khushboo",
-    liveLink: "https://rai-Khushboo.com"
+    title: "Beach Website",
+    description: "Resort Website created using React js and tailwind css.",
+    thumbnail: beach,
+    githubLink: "https://github.com/rai-Khushboo/React/tree/main/Website-beach",
+    liveLink: "https://react-beryl-kappa.vercel.app/"
   },
   {
     title: "Project 2",
     description: "Description of project 2.",
-    thumbnail: "https://via.placeholder.com/300",
+    thumbnail: beach,
     githubLink: "https://github.com/rai-Khushboo",
     liveLink: "https://rai-Khushboo.com"
   },
   {
     title: "Project 3",
     description: "Description of project 3.",
-    thumbnail: "https://via.placeholder.com/300",
+    thumbnail: beach,
     githubLink: "https://github.com/rai-Khushboo",
     liveLink: "https://rai-Khushboo.com"
   },
   {
     title: "Project 4",
     description: "Description of project 4.",
-    thumbnail: "https://via.placeholder.com/300",
+    thumbnail: beach,
     githubLink: "https://github.com/rai-Khushboo",
     liveLink: "https://rai-Khushboo.com"
   },
   {
     title: "Project 5",
     description: "Description of project 5.",
-    thumbnail: "https://via.placeholder.com/300",
+    thumbnail: beach,
     githubLink: "https://github.com/rai-Khushboo",
     liveLink: "https://rai-Khushboo.com"
   },
   {
     title: "Project 6",
     description: "Description of project 6.",
-    thumbnail: "https://via.placeholder.com/300",
+    thumbnail: beach,
     githubLink: "https://github.com/rai-Khushboo",
     liveLink: "https://rai-Khushboo.com"
   },
@@ -68,8 +70,8 @@ const ProjectSlider = () => {
       >
         {projects.map((project) => (
           <SwiperSlide key={project.title} className="flex justify-center p-4">
-            <div className="bg-gray-600 shadow-lg rounded-lg p-6 w-80 h-96 flex flex-col">
-              <img src={project.thumbnail} alt={project.title} className="w-full h-48 object-cover rounded" />
+            <div className="bg-gray-600 shadow-lg rounded-lg p-3 w-80 h-96 flex flex-col">
+              <img src={project.thumbnail} alt={project.title} className="w-full h-48 object-fit rounded" />
               <h3 className="text-lg font-semibold mt-2">{project.title}</h3>
               <p className="text-gray-200">{project.description}</p>
               <div className="mt-4 flex justify-between">
