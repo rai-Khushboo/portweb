@@ -38,7 +38,7 @@ const Home = () => {
             I’m Khushboo Kumari, a pre-final year Information Technology student with a passion for front-end development and problem-solving.
           </p>
           <div className='my-10'>
-            <a href="/resume.pdf" download className='px-10 py-3 w-full rounded-xl bg-gradient-to-br from-blue-500 to-pink-300 text-white hover:font-extrabold transition-transform'>
+            <a href="/khushbooResume.pdf" download className='px-10 py-3 w-full rounded-xl bg-gradient-to-br from-blue-500 to-pink-300 text-white hover:font-extrabold transition-transform'>
               Download Resume ↓
             </a>
           </div>
@@ -82,16 +82,5 @@ const Home = () => {
     </div>
   );
 };
-
-const SocialLink = ({ href, icon }) => (
-  <a 
-    href={href} 
-    className="bg-blue-500 text-white p-3 rounded-full shadow-lg hover:bg-blue-600 transition-transform transform hover:scale-105"
-    target="_blank" 
-    rel="noopener noreferrer"
-  >
-    {icon}
-  </a>
-);
 
 export default Home;
