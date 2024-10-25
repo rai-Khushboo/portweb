@@ -70,7 +70,7 @@ const ProjectSlider = () => {
       >
         {projects.map((project) => (
           <SwiperSlide key={project.title} className="flex justify-center p-4">
-            <div className="bg-gray-600 shadow-lg rounded-lg p-3 w-80 h-96 flex flex-col">
+            <div className="bg-gray-700 shadow-lg rounded-lg p-3 w-80 h-96 flex flex-col">
               <img src={project.thumbnail} alt={project.title} className="w-full h-48 object-fit rounded" />
               <h3 className="text-lg font-semibold mt-2">{project.title}</h3>
               <p className="text-gray-200">{project.description}</p>
