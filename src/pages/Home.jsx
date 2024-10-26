@@ -10,7 +10,7 @@ import Contact from './Contact';
 
 const Home = () => {
   return (
-    <div className='bg-gray-900'>
+    <div className='bg-black'>
       <div className='grid grid-cols-1 sm:grid-cols-3 gap-10 md:h-[80vh] mx-auto py-16'>
         <div className="col-span-2 px-6 ml-3">
           <h1 className="text-white text-4xl sm:text-5xl lg:text-5xl font-extrabold mb-4">
@@ -38,7 +38,7 @@ const Home = () => {
             I’m Khushboo Kumari, a pre-final year Information Technology student with a passion for front-end development and problem-solving.
           </p>
           <div className='my-10'>
-            <a href="/khushbooResume.pdf" download className='px-10 py-3 w-full rounded-xl bg-gradient-to-br from-blue-500 to-pink-300 text-white hover:font-extrabold transition-transform'>
+            <a href="/khushbooResume.pdf" download className='px-10 py-3 w-full rounded-xl bg-gradient-to-br from-blue-600 to-pink-200 text-white font-semibold hover:border-2 transition-transform border-blue-700'>
               Download Resume ↓
             </a>
           </div>
@@ -48,10 +48,10 @@ const Home = () => {
               <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-blue-500">
                 <FaLinkedin size={30} />
               </a>
-              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-pink-500">
+              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-green-400">
                 <FaTwitter size={30} />
               </a>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-gray-400">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-gray-500">
                 <FaGithub size={30} />
               </a>
               <a href="mailto:your-email@example.com" className="text-gray-300 hover:text-red-500">
@@ -64,7 +64,7 @@ const Home = () => {
         <div className="flex-shrink-0 m-14 hidden sm:block">
           <img 
             src={me} 
-            className="rounded-full shadow-lg w-60 transition-transform transform hover:scale-110 
+            className="rounded-tl-lg shadow-lg w-60 transition-transform transform hover:scale-110 
               shadow-blue-500/100 shadow-md" 
             alt="Khushboo" 
           />

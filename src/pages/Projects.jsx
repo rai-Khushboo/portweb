@@ -56,7 +56,7 @@ const projects = [
 
 const ProjectSlider = () => {
   return (
-    <div className="relative bg-gray-900">
+    <div className="relative bg-black">
       <Swiper
         slidesPerView={3}
         spaceBetween={30}
@@ -70,7 +70,7 @@ const ProjectSlider = () => {
       >
         {projects.map((project) => (
           <SwiperSlide key={project.title} className="flex justify-center p-4">
-            <div className="bg-gray-700 shadow-lg rounded-lg p-3 w-80 h-96 flex flex-col">
+            <div className="bg-gray-900 shadow-lg rounded-lg p-3 w-80 h-96 flex flex-col">
               <img src={project.thumbnail} alt={project.title} className="w-full h-48 object-fit rounded" />
               <h3 className="text-lg font-semibold mt-2">{project.title}</h3>
               <p className="text-gray-200">{project.description}</p>
@@ -104,8 +104,8 @@ const ProjectSlider = () => {
 
 const Project = () => {
   return (
-    <div className="bg-slate-900">
-      <h1 className="text-center text-5xl font-bold text-white mb-4">My Projects</h1>
+    <div className="bg-black">
+      <h1 className="text-center text-5xl font-bold text-white pt-8 mb-4">My Projects</h1>
       <ProjectSlider />
     </div>
   );

@@ -5,25 +5,26 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { GrMysql } from "react-icons/gr";
 const techStacks = [
 
-  { name: 'C++', icon: <SiCplusplus size={50} />, description: 'A JavaScript library for building user interfaces.' },
-  { name: 'React', icon: <FaReact size={50} />, description: 'A JavaScript library for building user interfaces.' },
-  { name: 'Tailwind CSS', icon: <RiTailwindCssFill size={50} />, description: 'JavaScript runtime built on Chrome\'s V8 JavaScript engine.' },
-  { name: 'Python', icon: <FaPython size={50} />, description: 'A high-level programming language for general-purpose programming.' },
-  { name: 'JavaScript', icon: <FaJs size={50} />, description: 'A high-level, class-based, object-oriented programming language.' },
-  { name: 'HTML5', icon: <FaHtml5 size={50} />, description: 'The standard markup language for creating web pages.' },
-  { name: 'CSS3', icon: <FaCss3Alt size={50} />, description: 'Style sheet language used for describing the presentation of a document.' },
-  { name: 'MYSQL', icon: <GrMysql size={50} />, description: 'Style sheet language used for describing the presentation of a document.' },
+  { name: 'C++', icon: <SiCplusplus size={50} />, description: 'A high-performance programming language.' },
+  { name: 'React', icon: <FaReact size={50} />, description: 'A library for building user interfaces with components.' },
+  { name: 'Tailwind CSS', icon: <RiTailwindCssFill size={50} />, description: 'A utility-first CSS framework for rapid UI design.' },
+  { name: 'Python', icon: <FaPython size={50} />, description: 'A versatile, high-level programming language.' },
+  { name: 'JavaScript', icon: <FaJs size={50} />, description: 'A dynamic language for web development.' },
+  { name: 'HTML5', icon: <FaHtml5 size={50} />, description: 'The standard markup language for web pages.' },
+  { name: 'CSS3', icon: <FaCss3Alt size={50} />, description: 'A style sheet language for web document presentation.' },
+  { name: 'MySQL', icon: <GrMysql size={50} />, description: 'A popular relational database management system.' },
+
 ];
 
 const TechStacks = () => {
   return (
-    <div className="bg-gray-900 py-10">
+    <div className="bg-black py-10">
       <h1 className="text-center text-5xl font-bold text-white mb-8">My Tech Stacks</h1>
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4">
         {techStacks.map((tech, index) => (
           <div 
             key={index} 
-            className="bg-gray-800 rounded-lg shadow-lg p-6 flex flex-col items-center transition-transform transform hover:scale-110 hover:shadow-2xl"
+            className="bg-gray-900 rounded-lg shadow-lg p-6 flex flex-col items-center transition-transform transform hover:scale-110 hover:shadow-2xl"
           >
             <div className="mb-4">{tech.icon}</div>
             <h2 className="text-xl font-bold text-white mb-2">{tech.name}</h2>

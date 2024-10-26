@@ -3,7 +3,7 @@ import music from '../assets/img/effect.jpeg';
 
 const About = () => {
   return (
-    <section className="bg-gray-900 text-white min-h-screen flex flex-col lg:flex-row justify-center items-center p-10">
+    <section className="bg-black text-white min-h-screen flex flex-col lg:flex-row justify-center items-center p-10">
       <div className="max-w-4xl lg:w-2/3 lg:pr-10">
         <h1 className="text-5xl font-bold mb-5 text-white text-center">Know Who I'M</h1>
         <p className="text-lg mb-8 ">
@@ -15,8 +15,8 @@ const About = () => {
             <p className="text-lg mb-6">
             When I'm not coding, I love to do.
             </p>
-            <ul className="list-none mb-8">
-            <li className="flex items-center text-lg mb-3">
+            <ul className="list-none text-m mb-8">
+            <li className="flex items-center mb-3">
                 <span className="mr-2">💻</span> Working on my own projects
             </li>
             <li className="flex items-center mb-3">
@@ -33,7 +33,7 @@ const About = () => {
         <img
           src={music} 
           alt="coding illustration"
-          className="w-90 h-120 rounded-lg" 
+          className="w-80 h-90 rounded-tl-lg " 
         />
       </div>
     </section>

@@ -4,7 +4,7 @@ import { FaLinkedin, FaInstagram, FaGithub, FaEnvelope } from 'react-icons/fa';
 
 const Contact = () => {
   return (
-    <div className="bg-gray-900 py-10">
+    <div className="bg-black py-10">
       <h1 className="text-center text-5xl font-bold text-white mb-6">Contact Me</h1>
       <div className="flex flex-col lg:flex-row max-w-6xl mx-auto items-center">
         {/* Left Side: Description and Photo */}
@@ -21,30 +21,30 @@ const Contact = () => {
         </div>
         
         {/* Right Side: Form */}
-        <div className="flex-1 bg-gray-800 rounded-lg p-5 shadow-lg">
+        <div className="flex-1 bg-gray-900 rounded-lg p-5 shadow-lg">
           <form>
             <div className="mb-4">
-              <label className="block text-gray-300 mb-2" htmlFor="name">Name</label>
+              <label className="block text-white mb-2" htmlFor="name">Name</label>
               <input
-                className="w-full p-2 bg-gray-700 rounded focus:outline-none focus:ring focus:ring-blue-500"
+                className="w-full p-2 bg-gray-800  text-white rounded focus:outline-none focus:ring focus:ring-blue-500"
                 type="text"
                 id="name"
                 required
               />
             </div>
             <div className="mb-4">
-              <label className="block text-gray-300 mb-2" htmlFor="email">Email</label>
+              <label className="block text-white mb-2" htmlFor="email">Email</label>
               <input
-                className="w-full p-2 bg-gray-700 rounded focus:outline-none focus:ring focus:ring-blue-500"
+                className="w-full p-2 bg-gray-800 rounded text-white focus:outline-none focus:ring focus:ring-blue-500"
                 type="email"
                 id="email"
                 required
               />
             </div>
             <div className="mb-4">
-              <label className="block text-gray-300 mb-2" htmlFor="message">Message</label>
+              <label className="block text-white mb-2" htmlFor="message">Message</label>
               <textarea
-                className="w-full p-2 bg-gray-700 rounded focus:outline-none focus:ring focus:ring-blue-500"
+                className="w-full p-2 bg-gray-800 rounded text-white focus:outline-none focus:ring focus:ring-blue-500"
                 id="message"
                 rows="4"
                 required

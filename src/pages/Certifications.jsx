@@ -52,7 +52,7 @@ const certificates = [
 
 const Certification = () => {
   return (
-    <div className="bg-gray-900 py-10">
+    <div className="bg-black py-10">
       <h1 className="text-center text-5xl font-bold text-white mb-6">My Certifications</h1>
       
       <div className="relative w-full max-w-4xl mx-auto">
@@ -66,7 +66,7 @@ const Certification = () => {
         >
           {certificates.map((cert, index) => (
             <SwiperSlide key={index} className="flex justify-center">
-              <div className="relative w-80 h-96 bg-gray-700 rounded-lg overflow-hidden flex flex-col items-center justify-center shadow-lg transition-transform transform hover:scale-105 mx-2">
+              <div className="relative w-80 h-96 bg-gray-900 rounded-lg overflow-hidden flex flex-col items-center justify-center shadow-lg transition-transform transform hover:scale-105 mx-2">
                 <img src={cert.image} alt={cert.title} className="w-full h-48 object-fit" />
                 <div className="absolute bottom-24 left-4 text-blue-500 font-bold text-lg">{cert.title}</div>
                 <p className="absolute bottom-12 left-4 text-gray-300 text-sm">{cert.description}</p>

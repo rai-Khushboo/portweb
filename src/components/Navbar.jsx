@@ -4,7 +4,7 @@ import { FaHome, FaInfoCircle, FaProjectDiagram, FaCertificate, FaEnvelope, FaCo
 
 function Navbar() {
   return (
-    <nav className="bg-black p-5">
+    <nav className="bg-gray-950  p-5">
       <div className="flex items-center justify-between container mx-auto text-lg text-white">
         {/* P element */}
         <p className="text-lg">Portfolio</p>
