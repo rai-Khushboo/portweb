@@ -62,16 +62,16 @@ const Contact = () => {
 
       {/* Social Media Icons */}
       <div className="flex justify-center space-x-6 mt-6">
-        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-blue-500">
+        <a href="https://www.linkedin.com/in/khushboo-kumari-b08973255/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-blue-500">
           <FaLinkedin size={30} />
         </a>
-        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-pink-500">
+        <a href="https://www.instagram.com/khushboo_.rai/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-pink-500">
           <FaInstagram size={30} />
         </a>
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-gray-400">
+        <a href="https://github.com/rai-Khushboo" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-gray-400">
           <FaGithub size={30} />
         </a>
-        <a href="mailto:your-email@example.com" className="text-gray-300 hover:text-red-500">
+        <a href="mailto:khushboo83687@gmail.com" className="text-gray-300 hover:text-red-500">
           <FaEnvelope size={30} />
         </a>
       </div>

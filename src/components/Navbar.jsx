@@ -6,8 +6,8 @@ function Navbar() {
   return (
     <nav className="bg-gray-950  p-5">
       <div className="flex items-center justify-between container mx-auto text-lg text-white">
-        {/* P element */}
-        <p className="text-lg">Portfolio</p>
+        {/*Logo element- will add later */}
+        <p className="text-lg"></p>
         
         {/* Navigation items */}
         <ul className="hidden md:flex space-x-8 text-lg">

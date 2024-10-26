@@ -34,27 +34,32 @@ const Home = () => {
               repeat={Infinity}
             />
           </h1>
-          <p className="text-white text-lg sm:text-xl my-8 lg:text-xl">
-            I’m Khushboo Kumari, a pre-final year Information Technology student with a passion for front-end development and problem-solving.
+          <p className="text-white text-lg sm:text-xl my-8 lg:text-base/loose">
+          I’m a pre-final year IT student at JSS Noida, passionate about front-end development and problem-solving.
           </p>
           <div className='my-10'>
-            <a href="/khushbooResume.pdf" download className='px-10 py-3 w-full rounded-xl bg-gradient-to-br from-blue-600 to-blue-30000 text-white font-semibold hover:border-2 transition-transform border-blue-600'>
-              Download Resume ↓
+            <a 
+              href="https://drive.google.com/file/d/1vkXngHuGSKfk2eU5XsG8LImzurO6_zGz/view?usp=sharing" // Replace with your actual Google Drive link
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className='px-10 py-3 w-full rounded-xl bg-gradient-to-br from-blue-600 to-blue-20000 text-white font-semibold hover:border-2 transition-transform border-blue-600'
+            >
+              View Resume ↓
             </a>
           </div>
           
           {/* Social Links Section */}
             <div className="flex flex-row space-x-6 mt-6">
-              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-blue-500">
+              <a href="https://www.linkedin.com/in/khushboo-kumari-b08973255/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-blue-500">
                 <FaLinkedin size={30} />
               </a>
-              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-green-400">
+              <a href="https://x.com/khushboo_raii" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-green-400">
                 <FaTwitter size={30} />
               </a>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-gray-500">
+              <a href="https://github.com/rai-Khushboo" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-gray-500">
                 <FaGithub size={30} />
               </a>
-              <a href="mailto:your-email@example.com" className="text-gray-300 hover:text-red-500">
+              <a href="mailto:khushboo83687@gmail.com" className="text-gray-300 hover:text-red-500">
                 <FaEnvelope size={30} />
               </a>
             </div>

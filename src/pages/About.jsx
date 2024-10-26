@@ -8,7 +8,7 @@ const About = () => {
         <h1 className="text-5xl font-bold mb-5 text-white text-center">Know Who I'M</h1>
         <p className="text-lg mb-8 ">
         Hi there!, I'm <span className="font-bold">Khushboo</span> from <span className="font-bold">Ghaziabad</span> , 
-          a Frotend Web developer with a keen focus on building efficient, user-centered applications.I’m constantly refining my skills in problem-solving.
+        a Frontend Web Developer committed to building user-friendly applications and enhancing my problem-solving skills.
           <br></br><br></br>
           I actively code on LeetCode, HackerRank, and GeeksforGeeks, constantly challenging myself to deepen my understanding of algorithms and improve efficient design.
         </p>
