@@ -1,13 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaHome, FaInfoCircle, FaProjectDiagram, FaCertificate, FaEnvelope, FaCog } from 'react-icons/fa';
+import { LuCode2 } from "react-icons/lu";
 
 function Navbar() {
   return (
     <nav className="bg-gray-950  p-5">
       <div className="flex items-center justify-between container mx-auto text-lg text-white">
         {/*Logo element- will add later */}
-        <p className="text-lg"></p>
+        <p className="text-4xl"><LuCode2 /></p>
         
         {/* Navigation items */}
         <ul className="hidden md:flex space-x-8 text-lg">
