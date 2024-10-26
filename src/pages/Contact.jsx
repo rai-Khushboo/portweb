@@ -12,7 +12,7 @@ const Contact = () => {
           <img 
             src={profile1}photo
             alt="Your Name"
-            className="w-56 h-56 rounded-full mx-auto mb-4" // Increased size
+            className="w-56 h-56 rounded-full mx-auto mb-4" 
           />
           <p className="text-gray-300 font-bold">
             I'm always open to discussing new projects, creative ideas, or opportunities. 
