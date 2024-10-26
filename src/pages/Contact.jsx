@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import profile1 from '../assets/img/profile1.jpeg';
-import { FaLinkedin, FaInstagram, FaGithub, FaEnvelope } from 'react-icons/fa';
+import { FaLinkedin, FaTwitter, FaGithub, FaEnvelope } from 'react-icons/fa';
 import emailjs from 'emailjs-com';
 
 const Contact = () => {
@@ -95,8 +95,8 @@ const Contact = () => {
         <a href="https://www.linkedin.com/in/khushboo-kumari-b08973255/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-blue-500">
           <FaLinkedin size={30} />
         </a>
-        <a href="https://www.instagram.com/khushboo_.rai/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-pink-500">
-          <FaInstagram size={30} />
+        <a href="https://x.com/khushboo_raii" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-pink-500">
+          <FaTwitter size={30} />
         </a>
         <a href="https://github.com/rai-Khushboo" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-gray-400">
           <FaGithub size={30} />
