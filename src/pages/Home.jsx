@@ -18,7 +18,7 @@ const Home = () => {
             <br />
             <span className="primary-color text-4xl sm:text-5xl lg:text-5xl mb-5">I'm Khushboo</span>
             <br />
-            <TypeAnimation className='text-blue-500 text-4xl sm:text-5xl lg:text-7xl mt-10'
+            <TypeAnimation className='text-blue-600 text-4xl sm:text-5xl lg:text-7xl mt-10'
               sequence={[
                 "Web Dev",
                 1000,
@@ -38,7 +38,7 @@ const Home = () => {
             I’m Khushboo Kumari, a pre-final year Information Technology student with a passion for front-end development and problem-solving.
           </p>
           <div className='my-10'>
-            <a href="/khushbooResume.pdf" download className='px-10 py-3 w-full rounded-xl bg-gradient-to-br from-blue-600 to-pink-200 text-white font-semibold hover:border-2 transition-transform border-blue-700'>
+            <a href="/khushbooResume.pdf" download className='px-10 py-3 w-full rounded-xl bg-gradient-to-br from-blue-600 to-blue-30000 text-white font-semibold hover:border-2 transition-transform border-blue-600'>
               Download Resume ↓
             </a>
           </div>
@@ -64,7 +64,7 @@ const Home = () => {
         <div className="flex-shrink-0 m-14 hidden sm:block">
           <img 
             src={me} 
-            className="rounded-tl-lg shadow-lg w-60 transition-transform transform hover:scale-110 
+            className="rounded-tl-lg shadow-lg w-70 transition-transform transform hover:scale-110 
               shadow-blue-500/100 shadow-md" 
             alt="Khushboo" 
           />

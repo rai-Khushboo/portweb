@@ -9,8 +9,8 @@ const About = () => {
         <p className="text-lg mb-8 ">
         Hi there!, I'm <span className="font-bold">Khushboo</span> from <span className="font-bold">Ghaziabad</span> , 
           a Frotend Web developer with a keen focus on building efficient, user-centered applications.I’m constantly refining my skills in problem-solving.
-          <br></br>
-          You’ll often find me actively coding on platforms like LeetCode, HackerRank, and GeeksforGeeks, where I consistently challenge myself to enhance my understanding of algorithms and push the boundaries of efficient design.
+          <br></br><br></br>
+          I actively code on LeetCode, HackerRank, and GeeksforGeeks, constantly challenging myself to deepen my understanding of algorithms and improve efficient design.
         </p>
             <p className="text-lg mb-6">
             When I'm not coding, I love to do.
@@ -33,7 +33,7 @@ const About = () => {
         <img
           src={music} 
           alt="coding illustration"
-          className="w-80 h-90 rounded-tl-lg " 
+          className="w-80 h-100 rounded-tl-lg " 
         />
       </div>
     </section>

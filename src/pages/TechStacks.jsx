@@ -1,19 +1,19 @@
 import React from 'react';
-import { FaReact, FaNodeJs, FaPython, FaJs, FaHtml5, FaCss3Alt } from 'react-icons/fa';
+import { FaReact } from 'react-icons/fa';
+import { FaNodeJs, FaPython, FaJs, FaHtml5, FaCss3Alt } from 'react-icons/fa';
 import { SiCplusplus } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { GrMysql } from "react-icons/gr";
+
 const techStacks = [
-
-  { name: 'C++', icon: <SiCplusplus size={50} />, description: 'A high-performance programming language.' },
-  { name: 'React', icon: <FaReact size={50} />, description: 'A library for building user interfaces with components.' },
-  { name: 'Tailwind CSS', icon: <RiTailwindCssFill size={50} />, description: 'A utility-first CSS framework for rapid UI design.' },
-  { name: 'Python', icon: <FaPython size={50} />, description: 'A versatile, high-level programming language.' },
-  { name: 'JavaScript', icon: <FaJs size={50} />, description: 'A dynamic language for web development.' },
-  { name: 'HTML5', icon: <FaHtml5 size={50} />, description: 'The standard markup language for web pages.' },
-  { name: 'CSS3', icon: <FaCss3Alt size={50} />, description: 'A style sheet language for web document presentation.' },
-  { name: 'MySQL', icon: <GrMysql size={50} />, description: 'A popular relational database management system.' },
-
+  { name: 'C++', icon: <SiCplusplus size={50} color="#f34b20" />, description: 'A high-performance programming language.' },
+  { name: 'React', icon: <FaReact size={50} color="#61dafb" />, description: 'A library for building user interfaces with components.' },
+  { name: 'Tailwind CSS', icon: <RiTailwindCssFill size={50} color="#38b2ac" />, description: 'A utility-first CSS framework for rapid UI design.' },
+  { name: 'Python', icon: <FaPython size={50} color="#3776ab" />, description: 'A versatile, high-level programming language.' },
+  { name: 'JavaScript', icon: <FaJs size={50} color="#f7df1e" />, description: 'A dynamic language for web development.' },
+  { name: 'HTML5', icon: <FaHtml5 size={50} color="#e34f26" />, description: 'The standard markup language for web pages.' },
+  { name: 'CSS3', icon: <FaCss3Alt size={50} color="#1572b6" />, description: 'A style sheet language for web document presentation.' },
+  { name: 'MySQL', icon: <GrMysql size={50} color="#00758f" />, description: 'A popular relational database management system.' },
 ];
 
 const TechStacks = () => {
