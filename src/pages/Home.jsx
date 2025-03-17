@@ -39,7 +39,7 @@ const Home = () => {
           </p>
           <div className='my-10'>
             <a 
-{/*               href="https://drive.google.com/file/d/1vkXngHuGSKfk2eU5XsG8LImzurO6_zGz/view?usp=sharing"  */}
+              href="https://drive.google.com/file/d/1vkXngHuGSKfk2eU5XsG8LImzurO6_zGz/view?usp=sharing" 
               target="_blank" 
               rel="noopener noreferrer" 
               className='px-10 py-3 w-full rounded-xl bg-gradient-to-br from-blue-600 to-blue-20000 text-white font-semibold hover:border-2 transition-transform border-blue-600'
