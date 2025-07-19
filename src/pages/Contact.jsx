@@ -20,7 +20,6 @@ const Contact = () => {
     emailjs.send('service_d4fbo28', 'template_22saq18', formData, 'eo7g3tn34eZVj76al')
       .then((response) => {
         console.log('Email sent successfully!', response.status, response.text);
-        //reset the form
         setFormData({ name: '', email: '', message: '' });
       }, (error) => {
         console.log('Failed to send email. Error: ', error);
@@ -28,27 +27,26 @@ const Contact = () => {
   };
 
   return (
-    <div className="bg-black py-10">
-      <h1 className="text-center text-5xl font-bold text-white mb-6">Contact Me</h1>
-      <div className="flex flex-col lg:flex-row max-w-6xl mx-auto items-center">
-        <div className="flex-1 mb-6 lg:mb-0 lg:mr-6 text-center lg:text-left">
+    <section className="bg-black py-16 px-4 flex flex-col items-center">
+      <h1 className="text-5xl font-extrabold text-white mb-10 drop-shadow-lg text-center">Contact Me</h1>
+      <div className="flex flex-col lg:flex-row max-w-6xl w-full mx-auto items-center gap-8">
+        <div className="flex-1 mb-6 lg:mb-0 lg:mr-6 text-center lg:text-left flex flex-col items-center lg:items-start">
           <img 
             src={profile1}
             alt="Your Name"
-            className="w-56 h-56 rounded-full mx-auto mb-4" 
+            className="w-40 h-40 rounded-full mb-4 border-4 border-primary shadow-2xl object-cover" 
           />
           <p className="text-gray-300 font-bold">
             I'm always open to discussing new projects, creative ideas, or opportunities. 
             Feel free to reach out using the form or connect with me on social media!
           </p>
         </div>
-        
-        <div className="flex-1 bg-gray-900 rounded-lg p-5 shadow-lg">
-          <form onSubmit={sendEmail}>
+        <div className="flex-1 w-full">
+          <form onSubmit={sendEmail} className="bg-black/70 rounded-2xl p-8 shadow-lg">
             <div className="mb-4">
               <label className="block text-white mb-2" htmlFor="name">Name</label>
               <input
-                className="w-full p-2 bg-gray-800 text-white rounded focus:outline-none focus:ring focus:ring-blue-500"
+                className="w-full p-2 bg-gray-800 text-white rounded focus:outline-none focus:ring focus:ring-primary"
                 type="text"
                 name="name"
                 id="name"
@@ -60,7 +58,7 @@ const Contact = () => {
             <div className="mb-4">
               <label className="block text-white mb-2" htmlFor="email">Email</label>
               <input
-                className="w-full p-2 bg-gray-800 rounded text-white focus:outline-none focus:ring focus:ring-blue-500"
+                className="w-full p-2 bg-gray-800 rounded text-white focus:outline-none focus:ring focus:ring-primary"
                 type="email"
                 name="email"
                 id="email"
@@ -72,7 +70,7 @@ const Contact = () => {
             <div className="mb-4">
               <label className="block text-white mb-2" htmlFor="message">Message</label>
               <textarea
-                className="w-full p-2 bg-gray-800 rounded text-white focus:outline-none focus:ring focus:ring-blue-500"
+                className="w-full p-2 bg-gray-800 rounded text-white focus:outline-none focus:ring focus:ring-primary"
                 name="message"
                 id="message"
                 rows="4"
@@ -83,29 +81,15 @@ const Contact = () => {
             </div>
             <button
               type="submit"
-              className="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-2 rounded"
+              className="w-full bg-primary hover:bg-primary-dark text-white font-bold py-2 rounded transition-colors"
             >
               Send Message
             </button>
           </form>
         </div>
       </div>
-
-      <div className="flex justify-center space-x-6 mt-6">
-        <a href="https://www.linkedin.com/in/khushboo-kumari-b08973255/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-blue-500">
-          <FaLinkedin size={30} />
-        </a>
-        <a href="https://x.com/khushboo_raii" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-pink-500">
-          <FaTwitter size={30} />
-        </a>
-        <a href="https://github.com/rai-Khushboo" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-gray-400">
-          <FaGithub size={30} />
-        </a>
-        <a href="mailto:khushboo83687@gmail.com" className="text-gray-300 hover:text-red-500">
-          <FaEnvelope size={30} />
-        </a>
-      </div>
-    </div>
+      
+    </section>
   );
 };
 

@@ -1,8 +1,10 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import 'swiper/css/effect-cube';
-import { EffectCube, Navigation } from 'swiper/modules';
+import 'swiper/css/free-mode';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import { FreeMode, Pagination, Navigation } from 'swiper/modules';
 import { FaExternalLinkAlt } from 'react-icons/fa';
 import FMS from "../assets/img/FMS.jpg";
 import myntra1 from "../assets/img/myntra1.jpg";
@@ -45,33 +47,36 @@ const certificates = [
 
 const Certification = () => {
   return (
-    <div className="py-10 bg-black">
-      <h1 className="text-center text-5xl font-bold text-white mb-6">My Certifications</h1>
-      
-      <div className="relative w-full max-w-4xl mx-auto">
+    <section className="bg-black py-16 px-4 flex flex-col items-center">
+      <h1 className="text-5xl font-extrabold text-white mb-10 drop-shadow-lg text-center">My Certifications</h1>
+      <div className="w-full max-w-4xl">
         <Swiper
-          effect="cube"
-          navigation
-          modules={[EffectCube, Navigation]}
-          className="mySwiper"
-          slidesPerView={1}
+          slidesPerView={2}
           spaceBetween={30}
+          freeMode={true}
+          navigation={true}
+          pagination={{ clickable: true }}
+          modules={[FreeMode, Pagination, Navigation]}
+          className="mySwiper"
+          breakpoints={{
+            0: { slidesPerView: 1 },
+            640: { slidesPerView: 1 },
+            768: { slidesPerView: 2 },
+            1024: { slidesPerView: 2 },
+          }}
         >
           {certificates.map((cert, index) => (
             <SwiperSlide key={index} className="flex justify-center">
-              <div className="relative w-80 h-96 bg-gray-900 rounded-lg overflow-hidden flex flex-col items-center justify-center shadow-lg transition-transform transform hover:scale-105 mx-2">
+              <div className="relative w-80 h-96 bg-gray-900 rounded-lg overflow-hidden flex flex-col items-center justify-center shadow-lg transition-transform transform hover:scale-105">
                 <img src={cert.image} alt={cert.title} className="w-full h-48 object-fit" />
-                <div className="absolute bottom-24 left-4 text-blue-600 font-bold text-lg">{cert.title}</div>
-                <p className="absolute bottom-10 left-4 text-white text-sm">{cert.description}</p>
-                <a href={cert.link} className="absolute bottom-2 left-4 text-blue-400 flex items-center hover:underline" target="_blank" rel="noopener noreferrer">
-                  View Certificate <FaExternalLinkAlt className="ml-1" />
-                </a>
+                <div className="absolute bottom-24 left-4 text-white font-bold text-lg">{cert.title}</div>
+                <p className="absolute bottom-10 left-4 text-gray-300 text-sm">{cert.description}</p>
               </div>
             </SwiperSlide>
           ))}
         </Swiper>
       </div>
-    </div>
+    </section>
   );
 };
 

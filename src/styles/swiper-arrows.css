@@ -1,0 +1,27 @@
+/* Custom Swiper navigation arrows for Projects slider */
+.swiper-button-next, .swiper-button-prev {
+  width: 48px;
+  height: 48px;
+  background: #000;
+  color: #fff;
+  border-radius: 9999px;
+  border: 2px solid #7C3AED;
+  box-shadow: 0 4px 16px 0 rgba(124,58,237,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s, background 0.2s, color 0.2s;
+}
+.swiper-button-next:hover, .swiper-button-prev:hover {
+  background: #7C3AED;
+  color: #000;
+  transform: scale(1.12);
+}
+.swiper-button-next:focus-visible, .swiper-button-prev:focus-visible {
+  outline: 2px solid #7C3AED;
+  outline-offset: 2px;
+}
+.swiper-button-next::after, .swiper-button-prev::after {
+  font-size: 1.5rem;
+  font-weight: bold;
+} 
