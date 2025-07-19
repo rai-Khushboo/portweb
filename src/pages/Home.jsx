@@ -11,7 +11,7 @@ import Contact from './Contact';
 const Home = () => {
   return (
     <div className='bg-black'>
-      <div className='bg-gradient-to-br from-primary to-primary-dark grid grid-cols-1 sm:grid-cols-3 gap-10 md:h-[80vh] mx-auto py-16 rounded-b-3xl shadow-lg'>
+      <div className='bg-black grid grid-cols-1 sm:grid-cols-3 gap-10 md:h-[80vh] mx-auto py-16 rounded-b-3xl shadow-lg'>
         <div className="col-span-2 px-6 ml-3 flex flex-col justify-center">
           <h1 className="text-white text-4xl sm:text-5xl lg:text-5xl font-extrabold mb-4 drop-shadow-lg">
             Hello👋
